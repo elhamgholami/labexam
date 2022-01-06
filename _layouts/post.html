@@ -4,7 +4,7 @@ layout: default
 
 <article class="post">
   <h1 class="post-title" style="right: auto;">{{ page.title }}</h1>
-  <div class="post-meta" >
+  <div class="post-meta" style="right: auto;">
     {%- assign date_format = site.date_format | default: "%-d %b %Y" -%}
     <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: date_format }}</time>
     {%- if page.last_modified_at -%}
